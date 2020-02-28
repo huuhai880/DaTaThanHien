@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/item_borderquanly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="14"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:scrollHorizontally="true"
+                        android:id="@+id/txtTenSanPham"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Sắt u 20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Giá: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/txtGiaSanPham"
+                            android:textStyle="bold"
+                            android:textColor="#F44336"
+                            android:text="30000 VND"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="TT: "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/txtThuocTinh"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgDeleteSanPham"
+                        android:src="@drawable/imgdeletesanpham"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/imgtrusanpham"
+                        android:src="@drawable/imgminus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"></ImageView>
+
+                    <Button
+                        android:background="#03A9F4"
+                        android:textSize="13sp"
+                        android:id="@+id/btnSoLuongSanPham"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="2"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:tooltipText="">
+
+                    </Button>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/imgaddsanpham"
+                        android:src="@drawable/imgplus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:padding="5dp"
+                        android:drawableRight="@drawable/imgdropdow"
+                        android:background="@drawable/item_borderquanly"
+                        android:textSize="13sp"
+                        android:id="@+id/btnSoLuongnhole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Nhỏ lẻ"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:tooltipText="">
+
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llThemSanPhamNhoLe"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_bordertop"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:text="Nội dung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:background="@drawable/item_boder"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </EditText>
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:text="Giá tiền"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:id="@+id/edit_TienNhoLe"
+                android:inputType="number"
+                android:padding="10dp"
+                android:background="@drawable/item_boder"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
